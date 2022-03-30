@@ -1,5 +1,7 @@
 module "s3-bucket" {
-  source  = "app.terraform.io/bm_mi_lab/s3-bucket/aws"
-  version = "~>4.7.0"
+  source  = "terraform-aws-modules/s3-bucket/aws"
+  version = "3.0.0"
+  
+  # insert required variables here
   bucket_prefix = var.prefix
 }
